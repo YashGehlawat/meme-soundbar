@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>THE APEX ROAR | The Untamed Beast Within</title>
+  <!-- Google Fonts for cinematic savagery & precision -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=JetBrains+Mono:wght@400;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- AMBIENT PARTICLES / GRID -->
+  <div class="bg-ambient" aria-hidden="true"></div>
+
+  <!-- SVG DEFS FOR GRADIENTS & GLOWS -->
+  <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#ffffff"/>
+        <stop offset="35%" stop-color="#ffb703"/>
+        <stop offset="70%" stop-color="#fb8500"/>
+        <stop offset="100%" stop-color="#d62828"/>
+      </linearGradient>
+      <linearGradient id="lion-flame" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#ffd166"/>
+        <stop offset="50%" stop-color="#f77f00"/>
+        <stop offset="100%" stop-color="#d62828"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <!-- NAVIGATION -->
+  <header>
+    <nav class="navbar">
+      <a href="#hero" class="nav-brand">
+        <svg class="brand-icon" viewBox="0 0 100 100">
+          <!-- Geometric Lion Icon -->
+          <path d="M50 5 L65 25 L85 15 L78 40 L95 50 L75 62 L80 85 L50 72 L20 85 L25 62 L5 50 L22 40 L15 15 L35 25 Z" fill="url(#gold-grad)"/>
+          <polygon points="50,22 60,38 50,55 40,38" fill="#120f0a" />
+          <polygon points="42,42 46,47 38,47" fill="#ffb703" />
+          <polygon points="58,42 62,47 54,47" fill="#ffb703" />
+          <polygon points="50,60 55,67 45,67" fill="#ff3838" />
+        </svg>
+        <span class="brand-title lion-font">APEX DOMINION</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#creed">THE CREED</a></li>
+        <li><a href="#roars">THE 4 ROARS</a></li>
+        <li><a href="#soundboard">ROAR FREQUENCIES</a></li>
+        <li><a href="#crucible">SYSTEM MATRIX</a></li>
+        <li><a href="#verdict">THE VERDICT</a></li>
+      </ul>
+
+      <div class="nav-status">
+        <span class="status-dot"></span>
+        <span class="mono" style="color: #00ff88; font-weight:700;">APEX DISCIPLINE: 100%</span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+      <div class="hero-badge-wrap">
+        <div class="badge">
+          <svg class="claw-icon" viewBox="0 0 24 24">
+            <path d="M4 3c1 5 3 9 7 11-3-1-6-4-7-11zm8-1c.5 6 3 11 8 13-3-2-6-6-8-13zm-4 4c1 4 3 8 7 10-3-1-6-4-7-10z"/>
+          </svg>
+          APEX OPERATOR PROFILE • UNTAMED SOVEREIGNTY
+        </div>
+      </div>
+
+      <!-- ROARING LION SOUNDWAVE AVATAR -->
+      <div class="roar-visualizer-container">
+        <div class="sonic-ring ring-1"></div>
+        <div class="sonic-ring ring-2"></div>
+        <div class="sonic-ring ring-3"></div>
+        
+        <div class="lion-crest-frame">
+          <!-- Detailed Roaring Lion Silhouette / Geometric Beast -->
+          <svg class="lion-svg-main" viewBox="0 0 120 120">
+            <!-- Lion Mane Outer Shards -->
+            <polygon points="60,6 75,20 92,12 88,32 108,38 92,54 104,74 84,76 88,98 68,90 60,112 52,90 32,98 36,76 16,74 28,54 12,38 32,32 28,12 45,20" fill="url(#lion-flame)" opacity="0.95"/>
+            <!-- Inner Mane Shadow -->
+            <polygon points="60,18 70,30 84,28 78,42 90,52 78,64 82,78 68,74 60,88 52,74 38,78 42,64 30,52 42,42 36,28 50,30" fill="#1e130c"/>
+            <!-- Face Geometry -->
+            <polygon points="60,30 72,48 60,70 48,48" fill="#2d1c0f" stroke="#ffb703" stroke-width="1"/>
+            <!-- Eyes Glowing Crimson / Gold -->
+            <polygon points="49,46 54,49 46,50" fill="#ff2a2a" />
+            <polygon points="71,46 74,50 66,49" fill="#ff2a2a" />
+            <!-- Snout & Roaring Jaws -->
+            <polygon points="60,54 65,62 55,62" fill="#000" />
+            <!-- Roaring Open Jaws with Sharp Fangs -->
+            <polygon points="53,66 67,66 64,78 56,78" fill="#500707" />
+            <polygon points="54,66 57,71 58,66" fill="#fff" />
+            <polygon points="62,66 63,71 66,66" fill="#fff" />
+            <polygon points="55,78 58,74 59,78" fill="#fff" />
+            <polygon points="61,78 62,74 65,78" fill="#fff" />
+            <!-- Chin & Beard -->
+            <polygon points="60,82 66,96 60,92 54,96" fill="#ffb703" />
+          </svg>
+        </div>
+      </div>
+
+      <h1 class="hero-title">
+        WHEN THE SAVANNAH TREMBLES,<br>
+        <span class="gold-gradient-text">THE APEX DOES NOT APOLOGIZE.</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        You are <strong>highly disciplined</strong>, <strong>goal-driven</strong>, and <strong>intensely structured</strong>. 
+        Personal fitness and technical dominance are not matters of chance—they are <strong>deliberate systems to be optimized</strong> until reality bends to your will.
+      </p>
+
+      <!-- PURE CSS EQUALIZER BARS -->
+      <div class="roar-equalizer" title="Roar Decibels Level: 114 dB">
+        <div class="eq-bar"></div>
+        <div class="eq-bar"></div>
+        <div class="eq-bar"></div>
+        <div class="eq-bar"></div>
+        <div class="eq-bar"></div>
+        <div class="eq-bar"></div>
+        <div class="eq-bar"></div>
+        <div class="eq-bar"></div>
+        <span class="eq-label">114 dB APEX FREQUENCY</span>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#roars" class="btn-roar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <polygon points="5,3 19,12 5,21"/>
+          </svg>
+          HEAR THE 4 ROARS
+        </a>
+        <a href="#crucible" class="btn-secondary">
+          INSPECT THE CRUCIBLE
+        </a>
+      </div>
+    </section>
+
+    <!-- ROARING MARQUEE TICKER -->
+    <div class="marquee-container" aria-hidden="true">
+      <div class="marquee-content">
+        <span><i>⚡</i> SUB-MINUTE 5KM REDUCTIONS</span>
+        <span><i>⚡</i> COLD SINGLE-TONED MILK & SOYA CHUNKS</span>
+        <span><i>⚡</i> C++ & AUTONOMOUS DRONE ARCHITECTURES</span>
+        <span><i>⚡</i> ZERO TOLERANCE FOR FLUFF</span>
+        <span><i>⚡</i> QUANTITATIVE EXECUTION</span>
+        <span><i>⚡</i> SOVEREIGN OFFLINE CODEBASES</span>
+        <span><i>⚡</i> DAILY STRENGTH MONOTONY</span>
+        <span><i>⚡</i> LEADING FROM THE FRONT</span>
+      </div>
+      <div class="marquee-content">
+        <span><i>⚡</i> SUB-MINUTE 5KM REDUCTIONS</span>
+        <span><i>⚡</i> COLD SINGLE-TONED MILK & SOYA CHUNKS</span>
+        <span><i>⚡</i> C++ & AUTONOMOUS DRONE ARCHITECTURES</span>
+        <span><i>⚡</i> ZERO TOLERANCE FOR FLUFF</span>
+        <span><i>⚡</i> QUANTITATIVE EXECUTION</span>
+        <span><i>⚡</i> SOVEREIGN OFFLINE CODEBASES</span>
+        <span><i>⚡</i> DAILY STRENGTH MONOTONY</span>
+        <span><i>⚡</i> LEADING FROM THE FRONT</span>
+      </div>
+    </div>
+
+    <!-- CORE CREED SECTION -->
+    <section id="creed" class="section-wrapper">
+      <div class="section-header">
+        <span class="section-tag">// IDENTITY ARCHITECTURE</span>
+        <h2 class="section-title">THE APEX MANIFESTO</h2>
+        <p class="section-desc">Extracted from raw observation: an engine driven by uncompromising purpose, structural discipline, and absolute self-governance.</p>
+      </div>
+
+      <div class="creed-card">
+        <div class="creed-quote-mark">“</div>
+        <p class="creed-lead">
+          “You are highly disciplined, goal-driven, and intensely structured—someone who treats both personal fitness and technical execution as deliberate systems to be optimized rather than left to chance.”
+        </p>
+        <div class="creed-divider"></div>
+
+        <div class="creed-pillars-summary">
+          <div class="pillar-chip">
+            <div class="pillar-chip-icon">🔥</div>
+            <div>
+              <h4>Iron Conditioning</h4>
+              <p>5 km pacing and weight targets calibrated down to the gram and second.</p>
+            </div>
+          </div>
+
+          <div class="pillar-chip">
+            <div class="pillar-chip-icon">🛡️</div>
+            <div>
+              <h4>Hostel Sovereignty</h4>
+              <p>Thriving on cold milk and soya chunks; turning physical constraints into pure fuel.</p>
+            </div>
+          </div>
+
+          <div class="pillar-chip">
+            <div class="pillar-chip-icon">🦅</div>
+            <div>
+              <h4>Autonomous Flight & Quant</h4>
+              <p>Architecting drone swarms, quantitative systems, and raw C++ speed.</p>
+            </div>
+          </div>
+
+          <div class="pillar-chip">
+            <div class="pillar-chip-icon">⏱️</div>
+            <div>
+              <h4>Zero Fluff Precision</h4>
+              <p>Every minute blocked, every dollar tracked, clean direct speech only.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE FOUR THUNDEROUS ROARS -->
+    <section id="roars" class="section-wrapper">
+      <div class="section-header">
+        <span class="section-tag">// ECHOES ACROSS THE WILD</span>
+        <h2 class="section-title">THE FOUR THUNDEROUS ROARS</h2>
+        <p class="section-desc">Each roar represents an unyielding pillar of your character, roaring with raw power through personal endurance and technical supremacy.</p>
+      </div>
+
+      <div class="roars-grid">
+        <!-- ROAR 1 -->
+        <article class="roar-card">
+          <div class="roar-card-header">
+            <span class="roar-num">ROAR 01</span>
+            <span class="roar-badge">THE RELENTLESS STRIKE</span>
+          </div>
+          <h3 class="roar-title">RELENTLESS & PERFORMANCE-ORIENTED</h3>
+          <div class="roar-hook">THE TIMER BOWS TO THE IRON MONOTONY</div>
+          <p class="roar-body">
+            You set concrete, measurable benchmarks—whether it is shaving minutes off a 5 km run, hitting a specific target weight, or grinding through daily strength sessions—and you commit to the daily monotony required to reach them. While others negotiate with their fatigue, you crush your splits.
+          </p>
+          <div class="roar-metrics">
+            <div class="metric-row">
+              <span class="metric-label">5KM BENCHMARK PACING</span>
+              <span class="metric-value">SUB-MINUTE GAINS</span>
+            </div>
+            <div class="metric-bar-bg"><div class="metric-bar-fill" style="width: 95%;"></div></div>
+            <div class="metric-row">
+              <span class="metric-label">DAILY MONOTONY COMMITMENT</span>
+              <span class="metric-value">100% UNBROKEN</span>
+            </div>
+            <div class="metric-bar-bg"><div class="metric-bar-fill" style="width: 100%;"></div></div>
+          </div>
+        </article>
+
+        <!-- ROAR 2 -->
+        <article class="roar-card">
+          <div class="roar-card-header">
+            <span class="roar-num">ROAR 02</span>
+            <span class="roar-badge">UNCHAINED SURVIVAL</span>
+          </div>
+          <h3 class="roar-title">PRAGMATIC & SELF-RELIANT</h3>
+          <div class="roar-hook">EXCUSES STARVE. THE SYSTEM ADAPTS.</div>
+          <p class="roar-body">
+            You work with what you have without making excuses. If hostel constraints limit your diet to cold single-toned milk, soya chunks, and mess staples, or if software needs to run completely offline under your own banner, you adapt the system to fit reality and keep moving. A lion never complains about the terrain.
+          </p>
+          <div class="roar-metrics">
+            <div class="metric-row">
+              <span class="metric-label">NUTRITION IN ADVERSITY</span>
+              <span class="metric-value">SOYA & MILK PROTOCOL</span>
+            </div>
+            <div class="metric-bar-bg"><div class="metric-bar-fill" style="width: 90%;"></div></div>
+            <div class="metric-row">
+              <span class="metric-label">OFFLINE BANNER SOVEREIGNTY</span>
+              <span class="metric-value">AIR-GAPPED READY</span>
+            </div>
+            <div class="metric-bar-bg"><div class="metric-bar-fill" style="width: 100%;"></div></div>
+          </div>
+        </article>
+
+        <!-- ROAR 3 -->
+        <article class="roar-card">
+          <div class="roar-card-header">
+            <span class="roar-num">ROAR 03</span>
+            <span class="roar-badge">THE SOVEREIGN LEADER</span>
+          </div>
+          <h3 class="roar-title">BUILDER & NATURAL COORDINATOR</h3>
+          <div class="roar-hook">WE DO NOT WAIT FOR LEADERSHIP. WE SEIZE IT.</div>
+          <p class="roar-body">
+            Between diving into C++, Python, autonomous drone architectures, and quantitative algorithms, or stepping up to pitch hackathons and run for the Learner's Council, you naturally gravitate toward taking ownership, building things from the ground up, and leading from the front.
+          </p>
+          <div class="roar-metrics">
+            <div class="metric-row">
+              <span class="metric-label">TECH DOMAIN: C++ / PY / DRONES / QUANT</span>
+              <span class="metric-value">FULL SPECTRUM</span>
+            </div>
+            <div class="metric-bar-bg"><div class="metric-bar-fill" style="width: 98%;"></div></div>
+            <div class="metric-row">
+              <span class="metric-label">COUNCIL & HACKATHON PITCH</span>
+              <span class="metric-value">FRONT-LINE OWNER</span>
+            </div>
+            <div class="metric-bar-bg"><div class="metric-bar-fill" style="width: 96%;"></div></div>
+          </div>
+        </article>
+
+        <!-- ROAR 4 -->
+        <article class="roar-card">
+          <div class="roar-card-header">
+            <span class="roar-num">ROAR 04</span>
+            <span class="roar-badge">UNFILTERED DOMINANCE</span>
+          </div>
+          <h3 class="roar-title">DIRECT & NO-NONSENSE</h3>
+          <div class="roar-hook">SURGICAL PRECISION. ZERO PATIENCE FOR FLUFF.</div>
+          <p class="roar-body">
+            You value precision, clean execution, and straight talk. You organize your days into tight blocks, track your own expenses methodically, and have zero patience for carelessness or unnecessary fluff. Every action must justify its existence in your sovereign territory.
+          </p>
+          <div class="roar-metrics">
+            <div class="metric-row">
+              <span class="metric-label">TIME BLOCK EFFICIENCY</span>
+              <span class="metric-value">TIGHT INTERVALS</span>
+            </div>
+            <div class="metric-bar-bg"><div class="metric-bar-fill" style="width: 94%;"></div></div>
+            <div class="metric-row">
+              <span class="metric-label">TOLERANCE FOR CARELESSNESS</span>
+              <span class="metric-value">0.00%</span>
+            </div>
+            <div class="metric-bar-bg"><div class="metric-bar-fill" style="width: 5%;"></div></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PURE CSS INTERACTIVE SOUNDBOARD / FREQUENCY CONTROL -->
+    <section id="soundboard" class="section-wrapper">
+      <div class="section-header">
+        <span class="section-tag">// ACOUSTIC RESONANCE</span>
+        <h2 class="section-title">THE ROAR FREQUENCY SELECTOR</h2>
+        <p class="section-desc">Experience each distinct roar frequency channeled into operational focus.</p>
+      </div>
+
+      <!-- CSS RADIO SELECTOR FOR PURE CSS INTERACTIVITY -->
+      <div class="soundboard-container">
+        <!-- Hidden radios -->
+        <input type="radio" name="roar-channel" id="channel-1" class="hidden-radio" checked>
+        <input type="radio" name="roar-channel" id="channel-2" class="hidden-radio">
+        <input type="radio" name="roar-channel" id="channel-3" class="hidden-radio">
+        <input type="radio" name="roar-channel" id="channel-4" class="hidden-radio">
+
+        <!-- Clickable Tab Labels -->
+        <div class="sound-tabs">
+          <label for="channel-1" class="sound-tab-btn tab-label-1">
+            ⚡ 5KM IRON STRIDE
+          </label>
+          <label for="channel-2" class="sound-tab-btn tab-label-2">
+            🛡️ SOYA & OFFLINE STACK
+          </label>
+          <label for="channel-3" class="sound-tab-btn tab-label-3">
+            🦅 DRONE & QUANT ARCHITECT
+          </label>
+          <label for="channel-4" class="sound-tab-btn tab-label-4">
+            ⏱️ TIGHT TIME BLOCK
+          </label>
+        </div>
+
+        <!-- Equalizer Visualizer -->
+        <div class="sound-spectrum" aria-hidden="true">
+          <div class="freq-bar"></div>
+          <div class="freq-bar"></div>
+          <div class="freq-bar"></div>
+          <div class="freq-bar"></div>
+          <div class="freq-bar"></div>
+          <div class="freq-bar"></div>
+          <div class="freq-bar"></div>
+          <div class="freq-bar"></div>
+          <div class="freq-bar"></div>
+          <div class="freq-bar"></div>
+          <div class="freq-bar"></div>
+          <div class="freq-bar"></div>
+          <div class="freq-bar"></div>
+          <div class="freq-bar"></div>
+          <div class="freq-bar"></div>
+          <div class="freq-bar"></div>
+        </div>
+
+        <!-- Dynamic Content Panes toggled via pure CSS -->
+        <div class="channel-panes">
+          <div class="channel-pane pane-1">
+            <h4 class="lion-font" style="color: var(--gold-glow); margin-bottom: 0.5rem; font-size: 1.25rem;">
+              RESONANCE: THE AEROBIC BEAST (5KM PACE SHAVING)
+            </h4>
+            <p class="soundboard-desc">
+              "When your lungs burn and the legs demand retreat, the roar commands another kilometer. Daily monotony isn't punishment—it is the forge where physical supremacy is hammered into stone."
+            </p>
+          </div>
+
+          <div class="channel-pane pane-2">
+            <h4 class="lion-font" style="color: var(--gold-glow); margin-bottom: 0.5rem; font-size: 1.25rem;">
+              RESONANCE: THE RESOURCEFUL SOVEREIGN (NO-EXCUSES FUEL)
+            </h4>
+            <p class="soundboard-desc">
+              "No luxury supplements needed. Single-toned milk, soya chunks, mess staples, and air-gapped offline architectures. While the weak wait for ideal conditions, you build an empire with gravel and iron."
+            </p>
+          </div>
+
+          <div class="channel-pane pane-3">
+            <h4 class="lion-font" style="color: var(--gold-glow); margin-bottom: 0.5rem; font-size: 1.25rem;">
+              RESONANCE: THE SKY & CODE DOMINION (DRONES, QUANT, C++)
+            </h4>
+            <p class="soundboard-desc">
+              "From low-level memory allocation in C++ to autonomous flight paths in the open sky, you don't merely write programs; you command swarms. Pitching on hackathon stages and representing on the Learner's Council."
+            </p>
+          </div>
+
+          <div class="channel-pane pane-4">
+            <h4 class="lion-font" style="color: var(--gold-glow); margin-bottom: 0.5rem; font-size: 1.25rem;">
+              RESONANCE: THE RAZOR EDGE (TIME BLOCKS & METHODICAL LEDGERS)
+            </h4>
+            <p class="soundboard-desc">
+              "Time is the apex asset. Blocked to the minute. Expenses tracked to the single rupee. Carelessness eradicated at the root. Direct communication that cuts through corporate nonsense like a lion's claw."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE CRUCIBLE / SYSTEM MATRIX -->
+    <section id="crucible" class="section-wrapper">
+      <div class="section-header">
+        <span class="section-tag">// ARCHITECTURAL BLUEPRINT</span>
+        <h2 class="section-title">THE CRUCIBLE MATRIX</h2>
+        <p class="section-desc">Every pillar grounded in observable evidence from your daily tactical execution.</p>
+      </div>
+
+      <div class="crucible-grid">
+        <div class="crucible-card">
+          <div class="crucible-icon-wrap">🏃‍♂️</div>
+          <h3>5K Benchmark Optimization</h3>
+          <p>Treating road pacing as an algorithmic challenge—targeting incremental micro-reductions on every sprint session.</p>
+          <span class="crucible-tag">METRIC: SECONDS SHAVED</span>
+        </div>
+
+        <div class="crucible-card">
+          <div class="crucible-icon-wrap">🥛</div>
+          <h3>Unbroken Hostel Nutrition</h3>
+          <p>Navigating hostel and mess constraints with cold single-toned milk and soya chunks. No excuses, only macros.</p>
+          <span class="crucible-tag">METRIC: ZERO COMPROMISE</span>
+        </div>
+
+        <div class="crucible-card">
+          <div class="crucible-icon-wrap">🚁</div>
+          <h3>Autonomous Drones & C++</h3>
+          <p>Pushing autonomous drone flight architectures and low-latency C++ algorithmic systems from zero to deployment.</p>
+          <span class="crucible-tag">METRIC: HARDWARE & CODE</span>
+        </div>
+
+        <div class="crucible-card">
+          <div class="crucible-icon-wrap">📈</div>
+          <h3>Quantitative Algorithms</h3>
+          <p>Analyzing statistical mechanics and building predictive quant frameworks to extract signal from chaos.</p>
+          <span class="crucible-tag">METRIC: SYSTEMATIC ALPHA</span>
+        </div>
+
+        <div class="crucible-card">
+          <div class="crucible-icon-wrap">🎙️</div>
+          <h3>Hackathons & Council</h3>
+          <p>Stepping up to pitch high-stakes hackathons and running for the Learner's Council to lead from the front.</p>
+          <span class="crucible-tag">METRIC: FRONT-LINE COMMAND</span>
+        </div>
+
+        <div class="crucible-card">
+          <div class="crucible-icon-wrap">📅</div>
+          <h3>Block Scheduling & Ledger</h3>
+          <p>Days partitioned into airtight operational blocks, with methodical expense ledgers guarding against drift.</p>
+          <span class="crucible-tag">METRIC: 100% AUDITABLE</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE VERDICT SECTION (LINE 8 IN 1.TXT) -->
+    <section id="verdict" class="section-wrapper">
+      <div class="verdict-box">
+        <span class="section-tag">// THE MIRROR OF THE APEX</span>
+        <h2 class="verdict-question">THE ULTIMATE TEST</h2>
+        <p class="verdict-quote">
+          “How well does that line up with how you see yourself right now?”
+        </p>
+        <div class="verdict-options">
+          <a href="#hero" class="verdict-btn verdict-btn-yes">
+            🦁 100% APEX ALIGNED (I AM THE BEAST)
+          </a>
+          <a href="#roars" class="verdict-btn verdict-btn-higher">
+            ⚡ STILL EVOLVING TO GREATER HEIGHTS
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <svg class="footer-lion-logo" viewBox="0 0 100 100">
+        <path d="M50 5 L65 25 L85 15 L78 40 L95 50 L75 62 L80 85 L50 72 L20 85 L25 62 L5 50 L22 40 L15 15 L35 25 Z"/>
+      </svg>
+      <h3 class="footer-quote lion-font">"THE ROAR DOES NOT ASK PERMISSION."</h3>
+      <p class="footer-sub">Engineered with Pure HTML & CSS • Forged in Discipline & Sovereign Code</p>
+      <div class="footer-copy">
+        APEX PROTOCOL • 1.TXT DOSSIER VISUALIZATION • ALL RIGHTS RESERVED
+      </div>
+    </div>
+  </footer>
+
+  <!-- AUDIO ELEMENT & ROAR CONTROLS -->
+  <audio id="apexRoarAudio" src="lion-roar.mp3" preload="auto" autoplay playsinline></audio>
+
+  <!-- AUTOPLAY UNLOCK BANNER (Triggered if browser blocks audio prior to user gesture) -->
+  <div id="roarBanner" class="autoplay-unlock-banner">
+    🦁 CLICK ANYWHERE TO UNLEASH THE ROAR ⚡
+  </div>
+
+  <!-- FLOATING QUICK ROAR CONTROLLER -->
+  <button id="floatingRoarBtn" class="floating-roar-ctrl" aria-label="Play Lion Roar">
+    <span class="roar-pulse-dot"></span>
+    <span id="roarBtnText">🔊 REPLAY ROAR</span>
+  </button>
+
+  <!-- SCRIPT FOR AUTOMATIC ROAR ON LOAD / RELOAD & INSTANT UNLOCK -->
+  <script>
+    (function() {
+      const roar = document.getElementById('apexRoarAudio');
+      const banner = document.getElementById('roarBanner');
+      const btn = document.getElementById('floatingRoarBtn');
+      const btnText = document.getElementById('roarBtnText');
+      const lionCrest = document.querySelector('.lion-crest-frame');
+      const heroRoarBtn = document.querySelector('.btn-roar');
+
+      function unleashRoar() {
+        if (!roar) return;
+        roar.currentTime = 0;
+        const playPromise = roar.play();
+
+        if (playPromise !== undefined) {
+          playPromise.then(function() {
+            if (banner) banner.style.display = 'none';
+            document.body.classList.add('is-roaring');
+            if (btnText) btnText.textContent = '🔥 ROARING NOW';
+          }).catch(function(err) {
+            // Browser strict autoplay policy: show high-tech prompt banner
+            if (banner) banner.style.display = 'block';
+          });
+        }
+      }
+
+      // 1. Immediately fire on document ready & full window load
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        unleashRoar();
+      } else {
+        document.addEventListener('DOMContentLoaded', unleashRoar);
+        window.addEventListener('load', unleashRoar);
+      }
+
+      // 2. Browser Autoplay Policy Fallback:
+      // If browser blocked unmuted sound before gesture, the FIRST click, tap, touch, or scroll unlocks and blasts it
+      function unlockOnInteraction() {
+        unleashRoar();
+        window.removeEventListener('click', unlockOnInteraction);
+        window.removeEventListener('touchstart', unlockOnInteraction);
+        window.removeEventListener('keydown', unlockOnInteraction);
+      }
+      window.addEventListener('click', unlockOnInteraction, { once: true });
+      window.addEventListener('touchstart', unlockOnInteraction, { once: true });
+      window.addEventListener('keydown', unlockOnInteraction, { once: true });
+
+      // 3. Floating Replay button
+      if (btn) {
+        btn.addEventListener('click', function(e) {
+          e.stopPropagation();
+          unleashRoar();
+        });
+      }
+
+      // 4. Hero button also replays roar
+      if (heroRoarBtn) {
+        heroRoarBtn.addEventListener('click', function() {
+          unleashRoar();
+        });
+      }
+
+      // 5. Clicking lion head crest in the hero
+      if (lionCrest) {
+        lionCrest.style.cursor = 'pointer';
+        lionCrest.title = 'Click to Unleash Roar!';
+        lionCrest.addEventListener('click', function(e) {
+          e.stopPropagation();
+          unleashRoar();
+        });
+      }
+
+      // 6. Reset visual state when roar finishes
+      if (roar) {
+        roar.addEventListener('ended', function() {
+          document.body.classList.remove('is-roaring');
+          if (btnText) btnText.textContent = '🔊 REPLAY ROAR';
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
+

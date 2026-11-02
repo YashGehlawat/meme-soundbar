@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MEMEVAULT 50 // Ultimate Viral Meme Soundboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Chakra+Petch:wght@500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Floating Emoji Particle Layer -->
+  <div id="particleLayer" class="particle-layer" aria-hidden="true"></div>
+
+  <!-- Top Header & Live Visualizer -->
+  <header class="hero-header">
+    <div class="header-top-bar">
+      <div class="brand-badge">
+        <span class="pulse-dot"></span>
+        <span>50 VIRAL SOUNDS LOADED • ZERO LATENCY AUDIO ENGINE</span>
+      </div>
+      <div class="shortcut-hint">
+        <span>⌨️ Press <strong>SPACE</strong> for Random Meme • <strong>ESC</strong> to Stop All</span>
+      </div>
+    </div>
+
+    <div class="hero-main">
+      <div class="title-block">
+        <h1 class="glitch-title" data-text="MEMEVAULT 50">MEMEVAULT <span class="accent-50">50</span></h1>
+        <p class="subtitle">The Ultimate 50-Button Viral Meme & Chaos Soundboard — Press Any Pad to Unleash Pure Internet Gold</p>
+      </div>
+
+      <!-- Real-Time Audio Spectrum Canvas -->
+      <div class="visualizer-box">
+        <canvas id="audioCanvas" width="380" height="84"></canvas>
+        <div class="now-playing-bar">
+          <span class="np-label">NOW BLASTING:</span>
+          <span id="nowPlayingText" class="np-value">READY TO UNLEASH CHAOS 🔥</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Master Studio & Chaos Controls -->
+    <div class="control-deck">
+      <div class="deck-group">
+        <button id="randomBtn" class="deck-btn btn-random" title="Play a random meme sound (Spacebar)">
+          🎲 RANDOM MEME
+        </button>
+        <button id="chaosBtn" class="deck-btn btn-chaos" title="Unleash a wild combo barrage of meme sounds!">
+          ☢️ CHAOS BARRAGE
+        </button>
+        <button id="stopAllBtn" class="deck-btn btn-stop" title="Stop all playing sounds (Esc)">
+          🛑 STOP ALL
+        </button>
+      </div>
+
+      <div class="deck-group sliders-group">
+        <label class="ctrl-slider">
+          <span>🔊 VOL <strong id="volVal">90%</strong></span>
+          <input type="range" id="masterVolume" min="0" max="100" value="90" />
+        </label>
+        <label class="ctrl-slider">
+          <span>⚡ SPEED/PITCH <strong id="pitchVal">1.0x</strong></span>
+          <input type="range" id="pitchSlider" min="0.5" max="1.8" step="0.05" value="1.0" />
+        </label>
+      </div>
+
+      <div class="deck-group toggles-group">
+        <button id="bassBoostBtn" class="toggle-pill" aria-pressed="false">
+          💥 BASS BOOST (EARRAPE)
+        </button>
+        <button id="reverbBtn" class="toggle-pill" aria-pressed="false">
+          🌌 SLOWED + REVERB
+        </button>
+        <button id="overlapBtn" class="toggle-pill active" aria-pressed="true">
+          🔀 OVERLAP SOUNDS
+        </button>
+      </div>
+    </div>
+
+    <!-- Search & Category Filter Bar -->
+    <div class="filter-bar">
+      <div class="search-wrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Search 50 viral memes (e.g. Vine Boom, Metal Pipe, Bruh, Phonk, Megalovania)..." />
+        <button id="clearSearchBtn" class="clear-btn" style="display:none;">✕</button>
+      </div>
+
+      <div class="category-tabs" id="categoryTabs">
+        <button class="cat-tab active" data-cat="all">🔥 ALL (50)</button>
+        <button class="cat-tab" data-cat="viral">💀 CLASSIC VIRAL</button>
+        <button class="cat-tab" data-cat="brainrot">🗿 BRAINROT & PHONK</button>
+        <button class="cat-tab" data-cat="gaming">🎮 GAMING & ANIME</button>
+        <button class="cat-tab" data-cat="music">🎵 MEME ANTHEMS</button>
+        <button class="cat-tab" data-cat="cartoon">🤡 GOOFY & FAILS</button>
+        <button class="cat-tab" data-cat="alerts">🚨 ALERTS & SFX</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 50 Meme Buttons Grid -->
+  <main class="board-container">
+    <div id="soundboardGrid" class="soundboard-grid">
+      <!-- Dynamically populated with 50 interactive arcade meme buttons by script.js -->
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="board-footer">
+    <p>MEMEVAULT 50 • Hybrid Web Audio Synth + Viral Sound Engine • Works 100% Instantly Online & Offline</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
